@@ -7,7 +7,7 @@ module.exports = function(){
   });
 
   this.Then(/^I should see the name "([^"]*)"$/, name =>{
-    return browser.isVisible('h1').should.be.true;
+    return browser.isVisible(name).should.be.true;
   });
 
-}
+};

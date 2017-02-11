@@ -8,11 +8,11 @@ Feature: Viewing Projects
 
   Scenario Outline: Viewing Projects
     When I click on a project titled <title>
-    Then I should see the name <name>
+    Then I should see the name <img>
 
     Examples:
-    | title         | name                 |
-    | pokestay-img  | Pokemon Stay!        |
-    | raspi-img     | Raspberry Pi SmartTV |
-    | digidex-img   | Digital Rolodex      |
-    | power-img     | Power Ranking        |
+    | title           | img                    |
+    | "pokestay-img"  | ".pokestay-img"        |
+    | "raspi-img"     | ".raspi-img"           |
+    | "digidex-img"   | ".digidex-img"         |
+    | "power-img"     | ".power-img"           |
