@@ -10,14 +10,14 @@ module.exports = function(){
   })
 
   this.When(/^I go to "([^"]*)"$/, login =>{
-    browser.url(powerRank.myUrl+login)
+    browser.url("http://power-rank.com.s3-website-us-west-2.amazonaws.com/login")
   })
 
   this.When(/^type in the email "([^"]*)", password "([^"]*)" and submit the form$/, (email, password) =>{
     console.log(email);
     console.log(password);
-    browser.setValue(powerRank.emailForm, email)
-    browser.setValue(powerRank.passwordForm, password)
+    browser.setValue("#email", email)
+    browser.setValue("#password", password)
     browser.click(".btn")
   })
 

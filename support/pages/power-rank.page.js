@@ -9,3 +9,5 @@ const powerRank = Object.create(Page, {
   browseSection: {value: ".browse-section"}
 
 })
+
+module.exports = powerRank;
