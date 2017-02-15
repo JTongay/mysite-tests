@@ -16,5 +16,9 @@ module.exports = function(){
     browser.url(url)
   })
 
+  this.Given(/^I visit the signup portion$/, ()=>{
+    browser.url(redditClone.url)
+  })
+
 
 }

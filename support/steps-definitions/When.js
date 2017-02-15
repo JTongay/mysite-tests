@@ -28,6 +28,16 @@ module.exports = function(){
     browser.pause(500)
   })
 
+  this.When(/^I enter the new username "([^"]*)" and the password "([^"]*)"$/, (username, password)=>{
+    console.log(username);
+    console.log(password);
+    console.log(redditClone.signupUsername);
+    console.log(redditClone.signupPassword);
+    browser.setValue("#user_username", username)
+    browser.setValue("#user_password", password)
+    browser.pause(500)
+  })
+
   this.When(/^I submit the form$/, ()=>{
     browser.click(redditClone.formSubmit)
   })
