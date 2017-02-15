@@ -17,6 +17,7 @@ module.exports = function(){
   })
 
   this.Given(/^I visit the signup portion$/, ()=>{
+    console.log(redditClone.url);
     browser.url(redditClone.url)
   })
 

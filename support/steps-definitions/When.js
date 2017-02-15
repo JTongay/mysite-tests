@@ -33,6 +33,7 @@ module.exports = function(){
     console.log(password);
     console.log(redditClone.signupUsername);
     console.log(redditClone.signupPassword);
+    browser.pause(500)
     browser.setValue("#user_username", username)
     browser.setValue("#user_password", password)
     browser.pause(500)
